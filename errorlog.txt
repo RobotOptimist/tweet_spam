@@ -1,0 +1,14 @@
+C:\Users\MacIvor\Desktop\The Odin Project\tweet_spam>ruby micro_blogger.rb
+Initializing MicroBlogger
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/jumpstart_auth-0.4.0/lib/jumpstart_auth.rb:44:in `block in twitter': [DEPRECATION] #oauth_token= is deprecated. Use #access_token= instead.
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/jumpstart_auth-0.4.0/lib/jumpstart_auth.rb:45:in `block in twitter': [DEPRECATION] #oauth_token_secret= is deprecated. Use #access_token_secret= instead.
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/twitter-5.7.1/lib/twitter/rest/client.rb:96:in `rescue in request': SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed (Twitter::Error)
+        from C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/twitter-5.7.1/lib/twitter/rest/client.rb:92:in `request'
+        from C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/twitter-5.7.1/lib/twitter/rest/client.rb:69:in `post'
+        from C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/twitter-5.7.1/lib/twitter/request.rb:22:in `perform'
+        from C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/twitter-5.7.1/lib/twitter/request.rb:29:in `perform_with_object'
+        from C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/twitter-5.7.1/lib/twitter/rest/utils.rb:39:in `perform_with_object'
+        from C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/twitter-5.7.1/lib/twitter/rest/tweets.rb:148:in `update!'
+        from C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/twitter-5.7.1/lib/twitter/rest/tweets.rb:120:in `update'
+        from micro_blogger.rb:12:in `tweet'
+        from micro_blogger.rb:17:in `<main>'
