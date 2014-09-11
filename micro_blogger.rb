@@ -13,5 +13,7 @@ class MicroBlogger
 	end
 end
 
-blogger = MicroBlogger.new
-blogger.tweet("MicroBlogger Initialized")
+#blogger = MicroBlogger.new
+#blogger.tweet("MicroBlogger Initialized")
+
+#7690362

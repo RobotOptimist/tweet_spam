@@ -12,3 +12,27 @@ C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/twitter-5.7.1/lib/twitter/r
         from C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/twitter-5.7.1/lib/twitter/rest/tweets.rb:120:in `update'
         from micro_blogger.rb:12:in `tweet'
         from micro_blogger.rb:17:in `<main>'
+				
+				
+C:\Users\MacIvor\Desktop\The Odin Project\tweet_spam>irb
+irb(main):001:0> require './micro_blogger'
+=> true
+irb(main):002:0> blogger = MicroBlogger.new
+Initializing MicroBlogger
+=> #<MicroBlogger:0x2d60b88 @client=#<JumpstartAuth::TwitterClient:0x2d5e0e0   @consumer_key="mJ5otbhPGNoDCgCL7j5g", @consumer_secret="M0XkT6GeBnjxdlWHcSGYX1JutMVS9D5ISlkqRfShg",    @access_token="2801553776-ybIkHedbRgofvJd6W26Y9NMgDv7mYjuO7032fJi", @acce
+ss_token_secret="Ha1mQCUy7ScNz5QOSsaNPaZ0bKdwLyd94Ci0VxdQ7dLq8">>
+
+irb(main):003:0> blogger.tweet("MicroBlogger Initialized") Twitter::Error: SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed
+        from C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/twitter-5.7.1/lib/twitter/rest/client.rb:96:in `rescue in request'
+        from C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/twitter-5.7.1/lib/twitter/rest/client.rb:92:in `request'
+        from C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/twitter-5.7.1/lib/twitter/rest/client.rb:69:in `post'
+        from C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/twitter-5.7.1/lib/twitter/request.rb:22:in `perform'
+        from C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/twitter-5.7.1/lib/twitter/request.rb:29:in `perform_with_object'
+        from C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/twitter-5.7.1/lib/twitter/rest/utils.rb:39:in `perform_with_object'
+        from C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/twitter-5.7.1/lib/twitter/rest/tweets.rb:148:in `update!'
+        from C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/twitter-5.7.1/lib/twitter/rest/tweets.rb:120:in `update'
+        from C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/jumpstart_auth-0.6.0/lib/jumpstart_auth/twitter_client.rb:33:in `update'
+        from C:/Users/MacIvor/Desktop/The Odin Project/tweet_spam/micro_blogger.rb:12:in `tweet'
+        from (irb):3
+        from C:/RailsInstaller/Ruby1.9.3/bin/irb:12:in `<main>'
+irb(main):004:0>
